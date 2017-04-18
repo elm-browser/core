@@ -1,11 +1,12 @@
 {
     "name": "@elm-browser/core",
     "version": "1.0.0",
-    "description": "",
+    "description": "Native bindings for Browser's core modules.",
     "scripts": {
         "postinstall": "elm-npm-postinstall",
         "preuninstall": "elm-npm-preinstall",
-        "test": "npm-run-all test:*"
+        "test": "npm-run-all test:*",
+        "test:File": "karma start"
     },
     "repository": "elm-browser/core",
     "author": "Alexandre Gigliotti <alex@panosoft.com>",
@@ -14,8 +15,13 @@
         "@elm-node/npm-scripts": "^1.0.0"
     },
     "devDependencies": {
+        "elm-webpack-loader": "^4.3.0",
         "eslint": "^3.19.0",
         "eslint-config-elm": "^1.0.0",
-        "npm-run-all": "^4.0.2"
+        "karma": "^1.6.0",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-webpack": "^2.0.3",
+        "npm-run-all": "^4.0.2",
+        "webpack": "^1.15.0"
     }
 }
