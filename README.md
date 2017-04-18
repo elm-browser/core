@@ -5,4 +5,6 @@
 
 # todo
 
+- [ ] run tests in order
+    use mocha?
 - [ ] document

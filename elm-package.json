@@ -5,9 +5,11 @@
     "license": "Unlicense",
     "source-directories": [
         "src",
+        "test/Dialog",
         "test/File"
     ],
     "exposed-modules": [
+        "Browser.Dialog",
         "Browser.Error",
         "Browser.File"
     ],

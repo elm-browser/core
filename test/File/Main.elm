@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import Browser.Error as Error exposing (Error(Error))
-import Browser.File as FileReader exposing (Blob, File)
+import Browser.File as File exposing (Blob, File)
 import Task
 
 
@@ -20,7 +20,7 @@ type Msg
 -- new Blob([byte:domstring|blob|arraybuffer|arraybufferview], {type:string})
 -- new File([byte:domstring|blob|arraybuffer|arraybufferview], name:string, {type:string, lastModified:date})
 -- blob = Blob or File
--- FileReader
+-- File
 
 
 init : Flags -> ( {}, Cmd Msg )
@@ -28,6 +28,9 @@ init { blob, file } =
     let
         isDataUrl =
             String.contains "data:"
+
+        m =
+            Debug.log "File" "Init"
     in
         {}
             ! [ Task.succeed ()
@@ -37,7 +40,7 @@ init { blob, file } =
                                 m =
                                     Debug.log "Testing" "readBlobAsDataUrl"
                             in
-                                FileReader.readBlobAsDataUrl blob
+                                File.readBlobAsDataUrl blob
                                     |> Task.andThen
                                         (\value ->
                                             if isDataUrl value then
@@ -52,7 +55,7 @@ init { blob, file } =
                                 m =
                                     Debug.log "Testing" "readFileAsDataUrl"
                             in
-                                FileReader.readFileAsDataUrl file
+                                File.readFileAsDataUrl file
                                     |> Task.andThen
                                         (\value ->
                                             if isDataUrl value then
@@ -73,7 +76,7 @@ main =
             (\msg model ->
                 let
                     m =
-                        Debug.log "Elm" msg
+                        Debug.log "File" msg
                 in
                     ( model, Cmd.none )
             )
