@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Browser.File",
+    "comment": " Native bindings for Browser FileReader\n\n@docs Blob , readBlobAsDataUrl , File , readFileAsDataUrl\n\n",
+    "aliases": [
+      {
+        "name": "Blob",
+        "comment": " ",
+        "args": [],
+        "type": "Browser.File.LowLevel.Blob"
+      },
+      {
+        "name": "File",
+        "comment": " ",
+        "args": [],
+        "type": "Browser.File.LowLevel.File"
+      }
+    ],
+    "types": [],
+    "values": [
+      {
+        "name": "readBlobAsDataUrl",
+        "comment": " ",
+        "type": "Browser.File.Blob -> Task.Task Browser.Error.Error String"
+      },
+      {
+        "name": "readFileAsDataUrl",
+        "comment": " ",
+        "type": "Browser.File.File -> Task.Task Browser.Error.Error String"
+      }
+    ],
+    "generated-with-elm-version": "0.18.0"
+  },
+  {
+    "name": "Browser.Dialog",
+    "comment": " Native bindings to HTMLDialogElement api.\n\n@docs close , show , showModal\n\n",
+    "aliases": [],
+    "types": [],
+    "values": [
+      {
+        "name": "close",
+        "comment": " ",
+        "type": "() -> Task.Task Browser.Error.Error ()"
+      },
+      {
+        "name": "show",
+        "comment": " ",
+        "type": "() -> Task.Task Browser.Error.Error ()"
+      },
+      {
+        "name": "showModal",
+        "comment": " ",
+        "type": "() -> Task.Task Browser.Error.Error ()"
+      }
+    ],
+    "generated-with-elm-version": "0.18.0"
+  },
+  {
+    "name": "Browser.Error",
+    "comment": " Native binding for Browser error.\n\n@docs Error , fromValue\n\n",
+    "aliases": [],
+    "types": [
+      {
+        "name": "Error",
+        "comment": " ",
+        "args": [],
+        "cases": [
+          [
+            "Error",
+            [
+              "String",
+              "String"
+            ]
+          ]
+        ]
+      }
+    ],
+    "values": [
+      {
+        "name": "fromValue",
+        "comment": " ",
+        "type": "Json.Decode.Value -> Browser.Error.Error"
+      }
+    ],
+    "generated-with-elm-version": "0.18.0"
+  }
+]

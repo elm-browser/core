@@ -1,22 +1,25 @@
 {
-    "version": "0.0.0",
-    "summary": "",
-    "repository": "https://github.com/elm-browser/core.git",
-    "license": "Unlicense",
-    "source-directories": [
-        "src",
-        "test/Dialog",
-        "test/File"
-    ],
-    "exposed-modules": [
-        "Browser.Dialog",
-        "Browser.Error",
-        "Browser.File"
-    ],
-    "native-modules": true,
-    "dependencies": {
-        "elm-lang/core": "5.1.1 <= v < 6.0.0",
-        "elm-community/result-extra": "2.2.0 <= v < 3.0.0"
-    },
-    "elm-version": "0.18.0 <= v < 0.19.0"
+  "version": "0.0.0",
+  "summary": "",
+  "repository": "https://github.com/elm-browser/core.git",
+  "license": "Unlicense",
+  "source-directories": [
+    "src",
+    "test/Dialog",
+    "test/File",
+    "test/UserInterface"
+  ],
+  "exposed-modules": [
+    "Browser.Dialog",
+    "Browser.Error",
+    "Browser.File",
+    "Browser.Window"
+  ],
+  "native-modules": true,
+  "dependencies": {
+    "elm-lang/core": "5.1.1 <= v < 6.0.0",
+    "elm-lang/dom": "1.1.1 <= v < 2.0.0",
+    "elm-community/result-extra": "2.2.0 <= v < 3.0.0"
+  },
+  "elm-version": "0.18.0 <= v < 0.19.0"
 }

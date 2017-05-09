@@ -1,26 +1,26 @@
 {
-    "name": "@elm-browser/core",
-    "version": "1.0.0",
-    "description": "Native bindings for Browser's core modules.",
-    "scripts": {
-        "postinstall": "elm-npm-postinstall",
-        "preuninstall": "elm-npm-preinstall",
-        "test": "karma start"
-    },
-    "repository": "elm-browser/core",
-    "author": "Alexandre Gigliotti <alex@panosoft.com>",
-    "license": "Unlicense",
-    "dependencies": {
-        "@elm-node/npm-scripts": "^1.0.0"
-    },
-    "devDependencies": {
-        "elm-webpack-loader": "^4.3.0",
-        "eslint": "^3.19.0",
-        "eslint-config-elm": "^1.0.0",
-        "karma": "^1.6.0",
-        "karma-chrome-launcher": "^2.0.0",
-        "karma-webpack": "^2.0.3",
-        "npm-run-all": "^4.0.2",
-        "webpack": "^1.15.0"
-    }
+  "name": "@elm-browser/core",
+  "version": "1.0.0",
+  "description": "Native bindings for Browser's core modules.",
+  "scripts": {
+    "postinstall": "elm-npm-postinstall",
+    "preuninstall": "elm-npm-preuninstall",
+    "test": "karma start"
+  },
+  "repository": "elm-browser/core",
+  "author": "Alexandre Gigliotti <alex@panosoft.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "@elm-node/npm-scripts": "^1.0.0"
+  },
+  "devDependencies": {
+    "elm-webpack-loader": "^4.3.0",
+    "eslint": "^3.19.0",
+    "eslint-config-elm": "^2.0.0",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-webpack": "^2.0.3",
+    "npm-run-all": "^4.0.2",
+    "webpack": "^1.15.0"
+  }
 }
