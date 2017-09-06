@@ -5,9 +5,10 @@
 
 ## install
 
+You'll need [Grove](https://github.com/panosoft/elm-grove.git).
 
 ```
-npm install elm-browser/core
+grove install elm-browser/core
 ```
 
 _This package uses [elm-node/npm-scripts](https://github.com/elm-node/npm-scripts) for installation. Install them in your package for a better install experience._
