@@ -10,9 +10,7 @@
   "repository": "elm-browser/core",
   "author": "Alexandre Gigliotti <alex@panosoft.com>",
   "license": "Unlicense",
-  "dependencies": {
-    "@elm-node/npm-scripts": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "elm-webpack-loader": "^4.3.0",
     "eslint": "^3.19.0",
