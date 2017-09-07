@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "Native bindings for Browser's core modules.",
   "scripts": {
-    "postinstall": "elm-npm-postinstall",
-    "preuninstall": "elm-npm-preuninstall",
     "test": "karma start"
   },
   "repository": "elm-browser/core",
