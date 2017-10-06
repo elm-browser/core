@@ -1,6 +1,6 @@
 {
   "name": "@elm-browser/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native bindings for Browser's core modules.",
   "scripts": {
     "test": "karma start"
