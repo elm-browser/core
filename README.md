@@ -3,34 +3,15 @@
 > Native bindings for Browser's core apis.
 
 
-## install
+## Install
 
-You'll need [Grove](https://github.com/panosoft/elm-grove.git).
-
-```
+```sh
 grove install elm-browser/core
 ```
 
-_This package uses [elm-node/npm-scripts](https://github.com/elm-node/npm-scripts) for installation. Install them in your package for a better install experience._
+_Note: [Grove](https://github.com/panosoft/elm-grove), an advanced package manager for Elm, can be found [here](https://github.com/panosoft/elm-grove)._
 
 
-# todo
+## Documentation
 
-Dialog
-- [x] close
-- [x] show
-- [x] showModal
-
-
-File
-- [x] readBlobAsDataUrl
-- [x] readFileAsDataUrl
-
-
-Window
-- [x] unloading
-- [-] resized
-
-
-Notifications
-- [ ]
+Can be found in the [./docs](./tree/master/docs) directory.
